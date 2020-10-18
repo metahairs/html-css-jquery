@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>HTML/CSS/JQUERY</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            
+            <h1 class="text-center">Students of programming courses</h1>
+            
+            <div class="card signup">
+                <div class="card-header"> Sign up </div>
+                <div class="card-body">
+                    <form id="sign-up">
+                    
+                        <div class="form-group">
+                            <label for="programming_languages">Course name:</label>
+                            <select name="programming_languages" id="programming_languages" class="form-control">
+                                <option value="" selected>- Choose a course -</option>
+                                <option value="JS">Javascript</option>
+                                <option value="PHP">PHP</option>
+                                <option value="JAVA">Java</option>
+                                <option value="C++">C++</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Write here the name...">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="last_name">Lastname</label>
+                            <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Write here the lastname....">
+                            
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Sign up</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="card list-languages">
+                <div class="card-header"> List of students </div>
+                <div class="card-body">
+                    <div id="container-table">
+                        <div class="no-content">Select a course</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <script src="http://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous">
+        </script>
+        <script src="scripts.js"></script>
+    </body>
+</html>
